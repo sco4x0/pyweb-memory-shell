@@ -48,7 +48,6 @@ import tornado
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        type()
         result = eval(self.get_argument('expression'))
         self.write('<h2>result: %s!</h2>' % result)
 
